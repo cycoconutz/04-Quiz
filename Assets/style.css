@@ -1,0 +1,32 @@
+.butt-container{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+#start-button{
+    font-size: 26px;  
+    width:150px;
+}
+aside{
+    display:flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+.center{
+    text-align: center;
+}
+.hidden{
+    display:none;
+}
+.show{
+    display:inline;
+}
+#quiz-question{
+    font-size: 28px;
+    text-align: center;
+}
+#submit{
+    font-size: 26px;  
+    width:150px;
+}

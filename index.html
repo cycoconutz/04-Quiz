@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/04-Web APIs Code Quiz/Assets/style.css">
+    
+    <title >Danny's Code Quiz</title>
+</head>
+<body>
+    <h1 class="center">Javascrip Quiz</h1>
+    <h2 id="countdown" class="center">Time:</h2>
+    <br>
+    <span class="butt-container">
+    <button id="start-button">Start</button>
+    </span>
+    <section id="quiz-container">
+        <p id="quiz-question"></p>
+        <input type="radio" class ="hidden" name="answer" value="" id="a1"><label for="a1"></label>
+        <input type="radio" class ="hidden" name="answer" value="" id="a2"><label for="a2"></label>
+        <input type="radio" class ="hidden" name="answer" value="" id="a3"><label for="a3"></label>
+        <input type="radio" class ="hidden" name="answer" value="" id="a4"><label for="a4"></label>
+        <span class="butt-container">
+        <button id="submit" class="hidden">Submit</button>
+        </span>
+    </section>
+    <aside id="scoreboard">
+        <h2 id="score-header">Highscores:</h2>
+        <ol id="highscores">
+
+        </ol>
+    </aside>
+    <script src="/04-Web APIs Code Quiz/Assets/script.js"></script>
+</body>
+</html>
