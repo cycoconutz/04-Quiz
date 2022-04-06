@@ -33,9 +33,9 @@ var startButt = document.querySelector('#start-button');
 var submitButt = document.querySelector('#submit');
 var timerCount;
 var timer;
-
+// Start Button Begins Game
 startButt.addEventListener("click", startGame);
-
+// Adds time to clock and hides start button
 function startGame(){
   timerCount = 120;
   startButt.setAttribute("class", "hidden")
@@ -43,10 +43,9 @@ function startGame(){
   nextQuestion(0);
   startTimer();
 }
-
+// Populates questions and answers onto sheet
 function nextQuestion(questionNum){
   var currentQuestion = questionList[questionNum];
-  console.log(questionNum, currentQuestion)
   quizQ.textContent = (questionNum) + '. ' + currentQuestion.question;
   var answersDOM = currentQuestion.answers.map((answer, answerIndex) => {
   var label = document.createElement("label");
@@ -61,15 +60,12 @@ function nextQuestion(questionNum){
   quizA.appendChild(label);
   quizA.appendChild(input);
   });
-console.log(quizA)
   quizA.onsubmit = (e) => {
-    console.log(questionNum);
   e.preventDefault();
     checkAnswer(currentQuestion, questionNum)};
 }
-
+// Checks user selected answer vs. "correct" answer
 function checkAnswer(currentQuestion, questionNum){
-console.log("wat");
   if ($('input.answers:checked').val() == currentQuestion.correct){
     nextQuestion(questionNum+1);
     } else{
@@ -77,6 +73,7 @@ console.log("wat");
         nextQuestion();
     }
 }
+
 
 function startTimer() {
   // Sets timer
