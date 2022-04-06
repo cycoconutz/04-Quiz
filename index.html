@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/04-Web APIs Code Quiz/Assets/style.css">
+    <link rel="stylesheet" href="./Assets/style.css">
     
     <title >Danny's Code Quiz</title>
 </head>
@@ -17,20 +17,19 @@
     </span>
     <section id="quiz-container">
         <p id="quiz-question"></p>
-        <input type="radio" class ="hidden" name="answer" value="" id="a1"><label for="a1"></label>
-        <input type="radio" class ="hidden" name="answer" value="" id="a2"><label for="a2"></label>
-        <input type="radio" class ="hidden" name="answer" value="" id="a3"><label for="a3"></label>
-        <input type="radio" class ="hidden" name="answer" value="" id="a4"><label for="a4"></label>
+        <form id="quizAnswer">
         <span class="butt-container">
-        <button id="submit" class="hidden">Submit</button>
+        <button id="submit" type = "submit" class="hidden">Submit</button>
+        </form>
         </span>
     </section>
     <aside id="scoreboard">
         <h2 id="score-header">Highscores:</h2>
-        <ol id="highscores">
+        <ol id="initials">
 
         </ol>
     </aside>
-    <script src="/04-Web APIs Code Quiz/Assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
 </html>
